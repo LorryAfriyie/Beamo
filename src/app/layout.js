@@ -6,6 +6,7 @@ import "./css/main.css";
 // Component Import
 import Nav from "./navBar";
 import About from "./about";
+import Contact from "./contact";
 
 // Font
 import { Inter } from "next/font/google";
@@ -21,6 +22,7 @@ function mainPage() {
     <>
       <Nav />
       {/* <About /> */}
+      <Contact />
     </>
   );
 }
