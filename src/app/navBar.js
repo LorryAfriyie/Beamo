@@ -1,15 +1,32 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function Nav() {
+  useEffect(() => {
+    const toggleButton = document.getElementsByClassName("toggle-button")[0];
+    const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+    toggleButton.addEventListener("click", () => {
+      navbarLinks.classList.toggle("active");
+    });
+  }, []);
+
   return (
     <nav className="navigation-bar">
-      <ul>
-        <li>
-          <Link href={"#"}>
-            <h2>Beamo</h2>
-          </Link>
-        </li>
-        <div className="page-link">
+      <div>
+        <Link href={"#"} className="logo">
+          Beamo
+        </Link>
+      </div>
+      <a href="#" className="toggle-button">
+        <span className="hamburger-button"></span>
+        <span className="hamburger-button"></span>
+        <span className="hamburger-button"></span>
+      </a>
+      <div className="navbar-links">
+        <ul>
           <li>
             <Link href={"#"}>Home</Link>
           </li>
@@ -22,8 +39,8 @@ export default function Nav() {
           <li>
             <Link href={"#"}>Contact</Link>
           </li>
-        </div>
-      </ul>
+        </ul>
+      </div>
     </nav>
   );
 }

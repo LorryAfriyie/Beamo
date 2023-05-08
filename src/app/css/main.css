@@ -1,38 +1,92 @@
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 .navigation-bar {
-  padding-top: 0;
-  padding-bottom: 0;
   background-color: #000;
-}
-.navigation-bar span {
-  color: aqua;
-  padding: 1rem;
-}
-.navigation-bar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #34bfb1;
   overflow: hidden;
 }
+.navigation-bar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 .navigation-bar ul li {
-  float: left;
+  list-style: none;
+  transition: all 0.3s ease-in-out 0s;
+}
+.navigation-bar ul li:hover {
+  background-color: #555;
+  transition: all 0.3s ease-in-out 0s;
 }
 .navigation-bar ul li a {
-  display: block;
-  text-align: center;
-  padding: 14px 16px 10px;
   text-decoration: none;
   color: #34bfb1;
+  padding: 1rem;
+  display: block;
+  transition: all 0.3s ease-in-out 0s;
 }
-.navigation-bar ul .page-link {
-  margin-top: 0.3rem;
-  float: right;
+.navigation-bar ul li a:hover {
+  color: #fff;
+  transition: all 0.3s ease-in-out 0s;
 }
-.navigation-bar a {
-  font-size: 1.4rem;
+.navigation-bar .logo {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0.5rem;
+  color: #34bfb1;
+  transition: all 0.3s ease-in-out 0s;
+}
+.navigation-bar .logo:hover {
+  color: #fff;
+  transition: all 0.3s ease-in-out 0s;
+}
+.navigation-bar .toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.navigation-bar .toggle-button .hamburger-button {
+  height: 3px;
+  width: 100%;
+  background-color: #34bfb1;
+  border-radius: 10px;
 }
 
+@media screen and (max-width: 992px) {
+  .navigation-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navigation-bar .toggle-button {
+    display: flex;
+  }
+  .navigation-bar .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navigation-bar .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navigation-bar .navbar-links li {
+    text-align: center;
+  }
+  .navigation-bar .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+  .navigation-bar .navbar-links.active {
+    display: flex;
+  }
+}
 h1,
 h2 {
   font-family: "Press Start 2P";
