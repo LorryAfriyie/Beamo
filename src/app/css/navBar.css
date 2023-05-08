@@ -1,0 +1,32 @@
+.navigation-bar {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #000;
+}
+.navigation-bar span {
+  color: aqua;
+  padding: 1rem;
+}
+.navigation-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.navigation-bar ul li {
+  float: left;
+}
+.navigation-bar ul li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px 10px;
+  text-decoration: none;
+  color: #34bfb1;
+}
+.navigation-bar ul .page-link {
+  margin-top: 0.3rem;
+  float: right;
+}
+.navigation-bar a {
+  font-size: 1.4rem;
+}
