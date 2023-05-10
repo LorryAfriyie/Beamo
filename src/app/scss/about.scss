@@ -1,0 +1,18 @@
+.about-page {
+  background-color: blueviolet;
+  padding: 3rem;
+
+  h1 {
+    text-align: center;
+  }
+
+  .row {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .about-page {
+    height: auto;
+  }
+}

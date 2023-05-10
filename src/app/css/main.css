@@ -46,7 +46,7 @@
 }
 .navigation-bar .toggle-button {
   position: absolute;
-  top: 0.75rem;
+  top: 1rem;
   right: 1rem;
   display: none;
   flex-direction: column;
@@ -95,4 +95,24 @@ h2 {
 p,
 a {
   font-family: "Black Ops One";
+}
+
+.about-page {
+  background-color: blueviolet;
+  padding: 3rem;
+}
+.about-page h1 {
+  text-align: center;
+}
+.about-page .row {
+  align-items: center;
+}
+
+@media screen and (max-width: 770px) {
+  .about-page {
+    height: auto;
+  }
+}
+.contact-page {
+  height: 100%;
 }
