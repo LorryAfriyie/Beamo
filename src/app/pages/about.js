@@ -13,6 +13,11 @@ export default function About() {
               <Image src={logo} alt={logo} className="img-fluid logo" />
             </div>
             <div className="col-md-6">
+              <div className="block-container">
+                <div className="block-1" />
+                <div className="block-2" />
+              </div>
+
               <p className="about-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.

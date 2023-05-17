@@ -102,6 +102,9 @@ a {
   background-color: rgba(124, 235, 224, 0.9843137255);
   padding: 3rem;
 }
+.about-page .about-content {
+  position: relative;
+}
 .about-page .about-content h1 {
   text-align: center;
 }
@@ -109,9 +112,9 @@ a {
   align-items: center;
 }
 .about-page .about-content .about-text {
+  position: relative;
   text-align: center;
-  justify-content: center;
-  align-content: center;
+  z-index: 2;
 }
 .about-page .about-content .logo {
   display: block;
@@ -119,6 +122,32 @@ a {
   margin-right: auto;
   width: auto;
   height: 300px;
+}
+.about-page .about-content .col-md-6 {
+  position: relative;
+}
+.about-page .about-content .block-container {
+  position: relative;
+}
+.about-page .about-content .block-1 {
+  position: absolute;
+  background-color: rgba(4, 36, 33, 0.9843137255);
+  top: 10%;
+  left: 10%;
+  height: 400px;
+  width: 500px;
+  z-index: 0;
+  border-radius: 5px;
+  opacity: 0.8;
+}
+.about-page .about-content .block-2 {
+  position: relative;
+  background-color: rgba(29, 110, 102, 0.9843137255);
+  height: 400px;
+  width: 500px;
+  z-index: 1;
+  border-radius: 5px;
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 770px) {
@@ -128,4 +157,8 @@ a {
 }
 .contact-page {
   height: 100%;
+}
+
+.service .container h1 {
+  text-align: center;
 }
