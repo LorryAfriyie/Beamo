@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <div className="contact-page">
       <div className="container">
-        <h1>Contact</h1>
+        <h1 className="display-2">Contact</h1>
         
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel fugiat

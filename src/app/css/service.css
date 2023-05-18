@@ -1,3 +1,40 @@
+.service {
+  min-height: 100dvh;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.service .container p {
+  text-align: center;
+  margin: 4rem;
+}
 .service .container h1 {
   text-align: center;
+}
+.service .container .card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.service .container .card-grid .service-card {
+  background: rgba(124, 235, 224, 0.9843137255);
+  border-radius: 10px;
+  /*         height: 500px;
+          width: 400px; */
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+.service .container .card-grid .service-card h1 {
+  color: #fff;
+  background-color: rgba(4, 36, 33, 0.9843137255);
+  border-radius: 0 0 10px 10px;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+  .service .container .card-grid .service-card {
+    flex-basis: auto;
+  }
 }

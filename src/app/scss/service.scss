@@ -1,7 +1,51 @@
 .service {
+  min-height: 100dvh;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
   .container {
+    p {
+      text-align: center;
+      margin: 4rem;
+    }
     h1 {
       text-align: center;
+    }
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+
+      .service-card {
+        background: #7cebe0fb;
+        border-radius: 10px;
+/*         height: 500px;
+        width: 400px; */
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0;
+
+        h1 {
+          color: #fff;
+          background-color: #042421fb;
+          border-radius: 0 0 10px 10px;
+          padding: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .service {
+    .container {
+      .card-grid {
+        .service-card {
+          flex-basis: auto;
+        }
+      }
     }
   }
 }

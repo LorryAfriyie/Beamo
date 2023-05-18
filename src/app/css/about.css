@@ -1,7 +1,7 @@
 .about-page {
   position: relative;
   background-color: rgba(124, 235, 224, 0.9843137255);
-  padding: 3rem;
+  min-height: 100dvh;
 }
 .about-page .about-content {
   position: relative;
@@ -12,17 +12,18 @@
 .about-page .about-content .row {
   align-items: center;
 }
-.about-page .about-content .about-text {
-  position: relative;
+.about-page .about-content .about-info {
+  position: absolute;
   text-align: center;
   z-index: 2;
+  bottom: -10%;
+  padding: 4rem;
+  color: #fff;
 }
 .about-page .about-content .logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: auto;
-  height: 300px;
 }
 .about-page .about-content .col-md-6 {
   position: relative;
@@ -35,19 +36,19 @@
   background-color: rgba(4, 36, 33, 0.9843137255);
   top: 10%;
   left: 10%;
-  height: 400px;
+  height: 500px;
   width: 500px;
   z-index: 0;
-  border-radius: 5px;
+  border-radius: 10px;
   opacity: 0.8;
 }
 .about-page .about-content .block-2 {
   position: relative;
   background-color: rgba(29, 110, 102, 0.9843137255);
-  height: 400px;
+  height: 500px;
   width: 500px;
   z-index: 1;
-  border-radius: 5px;
+  border-radius: 10px;
   opacity: 0.8;
 }
 
