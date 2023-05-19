@@ -2,7 +2,7 @@ export default function Service() {
   return (
     <section className="service">
       <div className="container">
-        <h1 className="display-2">Services</h1>
+        <h1 className="display-4 header">Services</h1>
         <p className="lead text-muted">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quam,
           consequuntur eaque accusantium rerum explicabo, deleniti voluptate,
@@ -12,7 +12,7 @@ export default function Service() {
 
         <div className="card-grid">
           <div className="service-card">
-            <h1>First card</h1>
+            <h2 className="service-card-header">First card</h2>
 
             <div className="service-card-text">
               <p>
@@ -25,7 +25,7 @@ export default function Service() {
           </div>
 
           <div className="service-card">
-            <h1>Second card</h1>
+            <h2 className="service-card-header">Second card</h2>
 
             <div className="service-card-text">
               <p>
@@ -38,7 +38,7 @@ export default function Service() {
           </div>
 
           <div className="service-card">
-            <h1>Third card</h1>
+            <h2 className="service-card-header">Third card</h2>
 
             <div className="service-card-text">
               <p>

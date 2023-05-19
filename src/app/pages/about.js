@@ -10,7 +10,9 @@ export default function About() {
         <div className="about-content">
           <div className="row">
             <div className="col-md-6">
-              <Image src={logo} alt={logo} className="img-fluid logo" />
+              <div className="logo-img-container">
+                <Image src={logo} alt={logo} className="img-fluid logo" />
+              </div>
             </div>
 
             <div className="col-md-6">
@@ -27,16 +29,7 @@ export default function About() {
                     aliqua. Ultricies lacus sed turpis tincidunt id aliquet
                     risus feugiat in. Nec tincidunt praesent semper feugiat nibh
                     sed pulvinar proin. Faucibus turpis in eu mi bibendum neque
-                    egestas. Facilisi nullam vehicula ipsum a arcu cursus vitae.
-                    Feugiat pretium nibh ipsum consequat nisl. Sem et tortor
-                    consequat id porta nibh venenatis cras. Convallis posuere
-                    morbi leo urna molestie at elementum eu facilisis. Velit
-                    euismod in pellentesque massa placerat duis ultricies. Est
-                    ullamcorper eget nulla facilisi etiam dignissim diam. Lectus
-                    arcu bibendum at varius vel. Nisl condimentum id venenatis a
-                    condimentum vitae sapien pellentesque. Cras semper auctor
-                    neque vitae. Id venenatis a condimentum vitae sapien
-                    pellentesque habitant.
+                    egestas.
                   </p>
                 </div>
               </div>
