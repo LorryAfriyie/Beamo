@@ -1,5 +1,7 @@
 .navigation-bar {
   background-color: #000;
+  border-bottom: solid #f05757 2px;
+  box-shadow: 0 0 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -17,6 +17,13 @@
       align-items: center;
     }
 
+    .logo {
+      display: block;
+      max-width: 400px;
+      max-height: 400px;
+      width: auto;
+      height: auto;
+    }
     .about-info {
       h1 {
         color: #f05757;

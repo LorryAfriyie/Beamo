@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 .navigation-bar {
   background-color: #000;
+  border-bottom: solid #f05757 2px;
+  box-shadow: 0 0 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -113,6 +115,13 @@ a {
 }
 .about-page .about-content .row {
   align-items: center;
+}
+.about-page .about-content .logo {
+  display: block;
+  max-width: 400px;
+  max-height: 400px;
+  width: auto;
+  height: auto;
 }
 .about-page .about-content .about-info {
   position: absolute;
