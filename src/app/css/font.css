@@ -6,6 +6,8 @@ h2 {
 }
 
 p,
-a {
+a,
+label,
+button {
   font-family: "Black Ops One";
 }
