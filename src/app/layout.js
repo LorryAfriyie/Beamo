@@ -10,8 +10,10 @@ import Contact from "./pages/contact";
 import Service from "./pages/service";
 
 // Font
-import { Inter } from "next/font/google";
+import { Inter, Black_Ops_One, Press_Start_2P } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
+const black = Black_Ops_One({ subsets: ["latin"], weight: "400" });
+const press = Press_Start_2P({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
   title: "Beamo",

@@ -1,3 +1,8 @@
+// Fontawesome
+import { Black_Ops_One, Press_Start_2P } from "next/font/google";
+const black = Black_Ops_One({ subsets: ["latin"], weight: "400" });
+const press = Press_Start_2P({ subsets: ["latin"], weight: "400" });
+
 export default function Contact() {
   return (
     <div className="contact-page">
@@ -47,11 +52,11 @@ export default function Contact() {
                 </div>
 
                 <div className="mb-3">
-                  <label for="message" className="form-label">
+                  <label htmlFor="message" className="form-label">
                     Message
                   </label>
                   <textarea
-                    class="form-control"
+                    className="form-control"
                     id="message"
                     rows="10"
                   ></textarea>
@@ -66,36 +71,6 @@ export default function Contact() {
             </form>
           </div>
         </div>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel fugiat
-          consequatur impedit excepturi atque. Saepe nisi quaerat eius esse ea,
-          modi quasi unde ullam alias molestias laborum beatae quos labore.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel fugiat
-          consequatur impedit excepturi atque. Saepe nisi quaerat eius esse ea,
-          modi quasi unde ullam alias molestias laborum beatae quos labore.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel fugiat
-          consequatur impedit excepturi atque. Saepe nisi quaerat eius esse ea,
-          modi quasi unde ullam alias molestias laborum beatae quos labore.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel fugiat
-          consequatur impedit excepturi atque. Saepe nisi quaerat eius esse ea,
-          modi quasi unde ullam alias molestias laborum beatae quos labore.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel fugiat
-          consequatur impedit excepturi atque. Saepe nisi quaerat eius esse ea,
-          modi quasi unde ullam alias molestias laborum beatae quos labore.
-        </p>
       </div>
     </div>
   );

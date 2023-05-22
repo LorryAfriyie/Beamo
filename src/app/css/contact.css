@@ -7,3 +7,9 @@
   text-align: center;
   color: #f05757;
 }
+.contact-page .form-control:focus,
+.contact-page .form-select:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: rgba(124, 235, 224, 0.9843137255);
+}
