@@ -1,0 +1,21 @@
+// Theme colors
+$primary: #34bfb1;
+$secondary: #f24957;
+$tertiary: #042421fb;
+$quaternary: #17736a;
+$background-color: #242424;
+$beamo-white: #dedede;
+$beamo-grey: #555;
+
+.footer {
+  padding: 2em;
+  margin-top: auto;
+  width: 100%;
+  background: $background-color;
+
+  .footer-text {
+    text-align: center;
+    color: $beamo-white;
+    text-transform: uppercase;
+  }
+}

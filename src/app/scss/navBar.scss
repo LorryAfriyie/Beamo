@@ -1,11 +1,20 @@
+// Theme colors
+$primary: #34bfb1;
+$secondary: #f24957;
+$tertiary: #042421fb;
+$quaternary: #17736a;
+$background-color: #242424;
+$beamo-white: #dedede;
+$beamo-grey: #555;
+
 .navigation-bar {
-  background-color: #000;
-  border-bottom: solid #f05757 2px;
+  background-color: $background-color;
+  border-bottom: solid $secondary 4px;
   box-shadow: 0 0 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #34bfb1;
+  color: $primary;
   overflow: hidden;
 
   ul {
@@ -19,20 +28,20 @@
     }
 
     li:hover {
-      background-color: #555;
+      background-color: $beamo-grey;
       transition: all 0.3s ease-in-out 0s;
     }
 
     li a {
       text-decoration: none;
-      color: #34bfb1;
+      color: $primary;
       padding: 1rem;
       display: block;
       transition: all 0.3s ease-in-out 0s;
     }
 
     li a:hover {
-      color: #fff;
+      color: $beamo-white;
       transition: all 0.3s ease-in-out 0s;
     }
   }
@@ -42,12 +51,12 @@
     font-weight: bold;
     text-decoration: none;
     margin: 0.5rem;
-    color: #f05757;
+    color: $secondary;
     transition: all 0.3s ease-in-out 0s;
   }
 
   .logo:hover {
-    color: #fff;
+    color: $beamo-white;
     transition: all 0.3s ease-in-out 0s;
   }
 
@@ -65,7 +74,7 @@
     .hamburger-button {
       height: 3px;
       width: 100%;
-      background-color: #34bfb1;
+      background-color: $primary;
       border-radius: 10px;
     }
   }

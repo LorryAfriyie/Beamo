@@ -1,6 +1,6 @@
 .navigation-bar {
-  background-color: #000;
-  border-bottom: solid #f05757 2px;
+  background-color: #242424;
+  border-bottom: solid #f24957 4px;
   box-shadow: 0 0 30px;
   display: flex;
   justify-content: space-between;
@@ -29,7 +29,7 @@
   transition: all 0.3s ease-in-out 0s;
 }
 .navigation-bar ul li a:hover {
-  color: #fff;
+  color: #dedede;
   transition: all 0.3s ease-in-out 0s;
 }
 .navigation-bar .logo {
@@ -37,11 +37,11 @@
   font-weight: bold;
   text-decoration: none;
   margin: 0.5rem;
-  color: #f05757;
+  color: #f24957;
   transition: all 0.3s ease-in-out 0s;
 }
 .navigation-bar .logo:hover {
-  color: #fff;
+  color: #dedede;
   transition: all 0.3s ease-in-out 0s;
 }
 .navigation-bar .toggle-button {

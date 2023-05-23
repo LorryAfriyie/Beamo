@@ -1,4 +1,4 @@
-/* // Black Ops One
+// Black Ops One
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
 
 // Press Start 2P
@@ -12,7 +12,7 @@ h2 {
 p,
 a,
 label,
-button {
+button[type="button"],
+.form-control::placeholder {
   font-family: "Black Ops One";
 }
- */

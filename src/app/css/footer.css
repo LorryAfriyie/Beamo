@@ -1,0 +1,11 @@
+.footer {
+  padding: 2em;
+  margin-top: auto;
+  width: 100%;
+  background: #242424;
+}
+.footer .footer-text {
+  text-align: center;
+  color: #dedede;
+  text-transform: uppercase;
+}

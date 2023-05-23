@@ -2,7 +2,7 @@ export default function Service() {
   return (
     <section className="service">
       <div className="container">
-        <h1 className="display-4 header">Services</h1>
+        <h1 className="display-4 section-title">Services</h1>
         <p className="lead text-muted">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quam,
           consequuntur eaque accusantium rerum explicabo, deleniti voluptate,

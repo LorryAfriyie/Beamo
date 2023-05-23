@@ -1,16 +1,38 @@
+// Theme colors
+$primary: #34bfb1;
+$secondary: #f24957;
+$tertiary: #042421fb;
+$quaternary: #17736a;
+$background-color: #242424;
+$beamo-white: #dedede;
+$beamo-grey: #555;
+
 .about-page {
   position: relative;
-  background-color: #7cebe0fb;
+  background-color: $primary;
   min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 3rem;
 
   .about-content {
     position: relative;
 
-    h1 {
+    .section-title {
       text-align: center;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: $secondary;
+      bottom: 0;
+      left: calc(50% - 25px);
     }
 
     .row {
@@ -26,7 +48,7 @@
     }
     .about-info {
       h1 {
-        color: #f05757;
+        color: $secondary;
       }
       position: absolute;
       text-align: center;
@@ -35,7 +57,7 @@
       transform: translateY(-50%);
       z-index: 2;
       padding: 4rem;
-      color: #fff;
+      color: $beamo-white;
     }
 
     .block-container {
@@ -44,7 +66,7 @@
 
     .block-1 {
       position: absolute;
-      background-color: #042421fb;
+      background-color: $tertiary;
       top: 5%;
       left: 5%;
       height: 500px;
@@ -56,7 +78,7 @@
 
     .block-2 {
       position: relative;
-      background-color: #1d6e66fb;
+      background-color: $quaternary;
       height: 500px;
       width: 500px;
       z-index: 1;

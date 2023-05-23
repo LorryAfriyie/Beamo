@@ -1,11 +1,25 @@
 .service {
   min-height: 100dvh;
-  margin-top: 3rem;
   margin-bottom: 3rem;
+  background: #242424;
 }
-.service .container .header {
-  color: #f05757;
+.service .container {
+  padding: 3rem;
+}
+.service .container .section-title {
+  color: #f24957;
   text-align: center;
+  position: relative;
+}
+.service .container .section-title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #f24957;
+  bottom: 0;
+  left: calc(50% - 25px);
 }
 .service .container p {
   text-align: center;
@@ -19,17 +33,15 @@
   align-items: center;
 }
 .service .container .card-grid .service-card {
-  background: rgba(124, 235, 224, 0.9843137255);
+  background: #34bfb1;
   border-radius: 10px;
-  /*         height: 500px;
-  width: 400px; */
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0;
 }
 .service .container .card-grid .service-card .service-card-header {
   text-align: center;
-  color: #f05757;
+  color: #f24957;
   background-color: rgba(4, 36, 33, 0.9843137255);
   border-radius: 0 0 10px 10px;
   padding: 1rem;

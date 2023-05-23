@@ -8,6 +8,7 @@ import Nav from "./navBar";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import Service from "./pages/service";
+import Footer from "./pages/footer";
 
 // Font
 import { Inter, Black_Ops_One, Press_Start_2P } from "next/font/google";
@@ -34,9 +35,10 @@ function mainPage() {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         {mainPage()}
         {children}
+        <Footer />
       </body>
     </html>
   );

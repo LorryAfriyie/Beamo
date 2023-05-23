@@ -4,8 +4,6 @@ import logo from "../img/BeamoLogoDark.png";
 export default function About() {
   return (
     <section className="about-page">
-      <div className="about-page-background"></div>
-
       <div className="container">
         <div className="about-content">
           <div className="row">
@@ -22,7 +20,8 @@ export default function About() {
                 <div className="block-2" />
 
                 <div className="about-info">
-                  <h1>About</h1>
+                  <h1 className="section-title">About</h1>
+
                   <p className="about-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
