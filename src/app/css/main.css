@@ -1,9 +1,38 @@
-@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+#about {
+  min-height: 100dvh;
+  background: #34bfb1;
+}
+#about .grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+.footer {
+  padding: 2em;
+  margin-top: auto;
+  width: 100%;
+  background: #242424;
+}
+.footer .footer-text {
+  text-align: center;
+  color: #dedede;
+  text-transform: uppercase;
+}
+
+#hero {
+  min-height: 100dvh;
+  background: #34bfb1;
+}
+#hero .hero-header {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+}
+
 .navigation-bar {
   background-color: #242424;
   border-bottom: solid #f24957 4px;
-  box-shadow: 0 0 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -88,190 +117,4 @@
   .navigation-bar .navbar-links.active {
     display: flex;
   }
-}
-h1,
-h2 {
-  font-family: "Press Start 2P";
-}
-
-p,
-a,
-label,
-button[type=button],
-.form-control::placeholder {
-  font-family: "Black Ops One";
-}
-
-.about-page {
-  position: relative;
-  background-color: #34bfb1;
-  min-height: 100dvh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 3rem;
-}
-.about-page .about-content {
-  position: relative;
-}
-.about-page .about-content .section-title {
-  text-align: center;
-  position: relative;
-}
-.about-page .about-content .section-title::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #f24957;
-  bottom: 0;
-  left: calc(50% - 25px);
-}
-.about-page .about-content .row {
-  align-items: center;
-}
-.about-page .about-content .logo {
-  display: block;
-  max-width: 400px;
-  max-height: 400px;
-  width: auto;
-  height: auto;
-}
-.about-page .about-content .about-info {
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  width: 100%;
-  transform: translateY(-50%);
-  z-index: 2;
-  padding: 4rem;
-  color: #dedede;
-}
-.about-page .about-content .about-info h1 {
-  color: #f24957;
-}
-.about-page .about-content .block-container {
-  position: relative;
-}
-.about-page .about-content .block-1 {
-  position: absolute;
-  background-color: rgba(4, 36, 33, 0.9843137255);
-  top: 5%;
-  left: 5%;
-  height: 500px;
-  width: 500px;
-  z-index: 0;
-  border-radius: 10px;
-  opacity: 0.8;
-}
-.about-page .about-content .block-2 {
-  position: relative;
-  background-color: #17736a;
-  height: 500px;
-  width: 500px;
-  z-index: 1;
-  border-radius: 10px;
-  opacity: 0.8;
-}
-
-@media screen and (max-width: 770px) {
-  .about-page {
-    height: auto;
-  }
-}
-.contact-page {
-  min-height: 100dvh;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-.contact-page .section-title {
-  text-align: center;
-  position: relative;
-  color: #f24957;
-}
-.contact-page .section-title::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #f24957;
-  bottom: 0;
-  left: calc(50% - 25px);
-}
-.contact-page .form-control:focus,
-.contact-page .form-select:focus {
-  outline: none;
-  box-shadow: none;
-  border-color: #34bfb1;
-}
-.contact-page .email-container {
-  padding: 2rem;
-}
-
-.service {
-  min-height: 100dvh;
-  margin-bottom: 3rem;
-  background: #242424;
-}
-.service .container {
-  padding: 3rem;
-}
-.service .container .section-title {
-  color: #f24957;
-  text-align: center;
-  position: relative;
-}
-.service .container .section-title::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #f24957;
-  bottom: 0;
-  left: calc(50% - 25px);
-}
-.service .container p {
-  text-align: center;
-  margin: 4rem;
-}
-.service .container .card-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  align-items: center;
-}
-.service .container .card-grid .service-card {
-  background: #34bfb1;
-  border-radius: 10px;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0;
-}
-.service .container .card-grid .service-card .service-card-header {
-  text-align: center;
-  color: #f24957;
-  background-color: rgba(4, 36, 33, 0.9843137255);
-  border-radius: 0 0 10px 10px;
-  padding: 1rem;
-}
-
-@media screen and (max-width: 700px) {
-  .service .container .card-grid .service-card {
-    flex-basis: auto;
-  }
-}
-.footer {
-  padding: 2em;
-  margin-top: auto;
-  width: 100%;
-  background: #242424;
-}
-.footer .footer-text {
-  text-align: center;
-  color: #dedede;
-  text-transform: uppercase;
 }

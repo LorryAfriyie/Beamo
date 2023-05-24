@@ -7,14 +7,13 @@ $background-color: #242424;
 $beamo-white: #dedede;
 $beamo-grey: #555;
 
-#about {
+#hero {
   min-height: 100dvh;
   background: $primary;
 
-  .grid {
+  .hero-header {
+    min-height: 100dvh;
     display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr;
     place-items: center;
   }
 }

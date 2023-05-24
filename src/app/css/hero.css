@@ -1,10 +1,9 @@
-#about {
+#hero {
   min-height: 100dvh;
   background: #34bfb1;
 }
-#about .grid {
+#hero .hero-header {
+  min-height: 100dvh;
   display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr;
   place-items: center;
 }
