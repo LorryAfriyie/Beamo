@@ -1,0 +1,13 @@
+#service {
+  min-height: 100dvh;
+}
+#service .service-header {
+  min-height: 20rem;
+  background: #17736a;
+  display: grid;
+  place-items: center;
+}
+#service .service-header h1 {
+  font-size: 3rem;
+  color: #dedede;
+}

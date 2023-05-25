@@ -7,13 +7,18 @@ $background-color: #242424;
 $beamo-white: #dedede;
 $beamo-grey: #555;
 
-#hero {
+#blog {
   min-height: 100dvh;
-  background: $primary;
 
-  .section-header {
-    min-height: 100dvh;
+  .blog-header {
+    min-height: 20rem;
+    background: $quaternary;
     display: grid;
     place-items: center;
+
+    h1 {
+      font-size: 3rem;
+      color: $beamo-white;
+    }
   }
 }

@@ -1,24 +1,23 @@
-import './globals.css'
-import "./css/main.css";
+import "./globals.css";
+import "./scss/main.scss";
+import { Inter, Press_Start_2P, Black_Ops_One } from "next/font/google";
 
-import { Inter, Press_Start_2P, Black_Ops_One } from 'next/font/google'
+import Footer from "./footer";
+import Navbar from "./navbar";
 
-import Navbar from './navbar';
-import Footer from './footer';
-
-const inter = Inter({ subsets: ['latin'] })
-const black = Black_Ops_One({ subsets: ['latin'], weight: '400' })
-const press = Press_Start_2P({ subsets: ['latin'], weight: '400' })
+const inter = Inter({ subsets: ["latin"] });
+const black = Black_Ops_One({ weight: "400", subsets: ["latin"] });
+const press = Press_Start_2P({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Beamo',
-  description: 'Beamo Game Studio',
-}
+  title: "Beamo",
+  description: "Beamo Game Studio",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -28,7 +27,5 @@ export default function RootLayout({
         <Footer />
       </body>
     </html>
-  )
+  );
 }
-
-

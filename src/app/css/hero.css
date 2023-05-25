@@ -2,7 +2,7 @@
   min-height: 100dvh;
   background: #34bfb1;
 }
-#hero .hero-header {
+#hero .section-header {
   min-height: 100dvh;
   display: grid;
   place-items: center;

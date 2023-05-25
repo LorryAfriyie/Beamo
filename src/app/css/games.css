@@ -1,13 +1,13 @@
-#contact {
+#games {
   min-height: 100dvh;
 }
-#contact .contact-header {
+#games .games-header {
   min-height: 20rem;
   background: #17736a;
   display: grid;
   place-items: center;
 }
-#contact .contact-header h1 {
+#games .games-header h1 {
   font-size: 3rem;
   color: #dedede;
 }

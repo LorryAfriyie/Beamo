@@ -5,6 +5,5 @@ export default function Footer() {
         <h2>Beamo</h2>
       </div>
     </footer>
-
-  )
+  );
 }

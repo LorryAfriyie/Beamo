@@ -1,13 +1,13 @@
-#contact {
+#blog {
   min-height: 100dvh;
 }
-#contact .contact-header {
+#blog .blog-header {
   min-height: 20rem;
   background: #17736a;
   display: grid;
   place-items: center;
 }
-#contact .contact-header h1 {
+#blog .blog-header h1 {
   font-size: 3rem;
   color: #dedede;
 }

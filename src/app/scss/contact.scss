@@ -1,0 +1,24 @@
+// Theme colors
+$primary: #34bfb1;
+$secondary: #f24957;
+$tertiary: #042421fb;
+$quaternary: #17736a;
+$background-color: #242424;
+$beamo-white: #dedede;
+$beamo-grey: #555;
+
+#contact {
+  min-height: 100dvh;
+
+  .contact-header {
+    min-height: 20rem;
+    background: $quaternary;
+    display: grid;
+    place-items: center;
+
+    h1 {
+      font-size: 3rem;
+      color: $beamo-white;
+    }
+  }
+}

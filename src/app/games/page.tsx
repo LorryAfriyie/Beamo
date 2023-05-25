@@ -1,3 +1,9 @@
 export default function Games() {
-    return <h1>Games</h1>
+  return (
+    <section id="games">
+      <div className="games-header">
+        <h1>Games</h1>
+      </div>
+    </section>
+  );
 }

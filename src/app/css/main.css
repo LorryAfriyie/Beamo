@@ -8,6 +8,35 @@
   grid-template-columns: 1fr;
   place-items: center;
 }
+
+#blog {
+  min-height: 100dvh;
+}
+#blog .blog-header {
+  min-height: 20rem;
+  background: #17736a;
+  display: grid;
+  place-items: center;
+}
+#blog .blog-header h1 {
+  font-size: 3rem;
+  color: #dedede;
+}
+
+#contact {
+  min-height: 100dvh;
+}
+#contact .contact-header {
+  min-height: 20rem;
+  background: #17736a;
+  display: grid;
+  place-items: center;
+}
+#contact .contact-header h1 {
+  font-size: 3rem;
+  color: #dedede;
+}
+
 .footer {
   padding: 2em;
   margin-top: auto;
@@ -20,11 +49,25 @@
   text-transform: uppercase;
 }
 
+#games {
+  min-height: 100dvh;
+}
+#games .games-header {
+  min-height: 20rem;
+  background: #17736a;
+  display: grid;
+  place-items: center;
+}
+#games .games-header h1 {
+  font-size: 3rem;
+  color: #dedede;
+}
+
 #hero {
   min-height: 100dvh;
   background: #34bfb1;
 }
-#hero .hero-header {
+#hero .section-header {
   min-height: 100dvh;
   display: grid;
   place-items: center;
@@ -117,4 +160,17 @@
   .navigation-bar .navbar-links.active {
     display: flex;
   }
+}
+#service {
+  min-height: 100dvh;
+}
+#service .service-header {
+  min-height: 20rem;
+  background: #17736a;
+  display: grid;
+  place-items: center;
+}
+#service .service-header h1 {
+  font-size: 3rem;
+  color: #dedede;
 }
