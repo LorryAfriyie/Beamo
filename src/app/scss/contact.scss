@@ -17,8 +17,24 @@ $beamo-grey: #555;
     place-items: center;
 
     h1 {
+      position: relative;
       font-size: 3rem;
       color: $beamo-white;
     }
+
+    h1::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      height: 4px;
+      width: 50px;
+      background-color: $beamo-white;
+    }
+  }
+
+  .contact-container {
+
   }
 }

@@ -33,10 +33,20 @@
   place-items: center;
 }
 #contact .contact-header h1 {
+  position: relative;
   font-size: 3rem;
   color: #dedede;
 }
-
+#contact .contact-header h1::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  background-color: #dedede;
+}
 .footer {
   padding: 2em;
   margin-top: auto;

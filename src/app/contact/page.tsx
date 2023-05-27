@@ -5,13 +5,13 @@ export default function Contact() {
         <h1>Contact</h1>
       </div>
 
-      <div className="container">
+      <div className="contact-container">
         <div className="grid">
-          <div className="column">
+          <div className="column-left">
             <p>Image is here</p>
           </div>
 
-          <div className="column">
+          <div className="column-right">
             <form action="" method="post">
               <input
                 type="text"
