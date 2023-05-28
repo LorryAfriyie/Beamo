@@ -35,6 +35,35 @@ $beamo-grey: #555;
   }
 
   .contact-container {
+    padding: 3rem;
 
+    .contact-grid {
+      display: grid;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      input,
+      textarea {
+        width: 100%;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        padding: 12px;
+        resize: vertical;
+      }
+
+      .contact-details {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+
+  @media (min-width: 50em) {
+    .contact-container {
+      .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
   }
 }

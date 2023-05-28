@@ -22,3 +22,29 @@
   width: 50px;
   background-color: #dedede;
 }
+#contact .contact-container {
+  padding: 3rem;
+}
+#contact .contact-container .contact-grid {
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#contact .contact-container .contact-grid input,
+#contact .contact-container .contact-grid textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  padding: 12px;
+  resize: vertical;
+}
+#contact .contact-container .contact-grid .contact-details {
+  margin-bottom: 4rem;
+}
+@media (min-width: 50em) {
+  #contact .contact-container .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

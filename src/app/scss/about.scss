@@ -9,12 +9,109 @@ $beamo-grey: #555;
 
 #about {
   min-height: 100dvh;
-  background: $primary;
 
-  .grid {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr;
-    place-items: center;
+  .about-info-section {
+    background: $primary;
+    padding: 3rem;
+
+    .grid-even-columns {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 3rem;
+      padding: 1rem;
+
+      .flow {
+        position: relative;
+
+        .block {
+          position: absolute;
+          top: 0;
+        }
+
+        .block-1 {
+          background: #17736a;
+          color: $beamo-white;
+          border-radius: 5px;
+          left: 0;
+          z-index: 1;
+
+          h1 {
+            position: relative;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: $secondary;
+          }
+
+          h1::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            height: 4px;
+            width: 50px;
+            background-color: $secondary;
+          }
+        }
+
+        .block-2 {
+          background: #042421fb;
+          border-radius: 5px;
+          z-index: 0;
+          left: 150px;
+
+          h1 {
+            position: relative;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: $secondary;
+          }
+
+          h1::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            height: 4px;
+            width: 50px;
+            background-color: $secondary;
+          }
+        }
+      }
+    }
+  }
+
+  .about-team-section {
+    background: $beamo-white;
+    padding: 3rem;
+
+    .team-grid-even-columns {
+      display: grid;
+      gap: 1rem;
+
+      .flow {
+        .team-card {
+          background: $tertiary;
+          border-radius: 5px;
+          border: $quaternary solid 3px;
+          padding: 3rem;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 50em) {
+    .grid-even-columns {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 50em) {
+    .team-grid-even-columns {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 }

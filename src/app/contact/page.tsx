@@ -6,9 +6,19 @@ export default function Contact() {
       </div>
 
       <div className="contact-container">
-        <div className="grid">
+        <div className="contact-grid">
           <div className="column-left">
-            <p>Image is here</p>
+            <div className="contact-details">
+              <p>Email: beamostudios@beamo.com</p>
+            </div>
+
+            <div className="contact-details">
+              <p>Location: A108 Adam Street, New York, NY 535022</p>
+            </div>
+
+            <div className="contact-details">
+              <h1>Contact: +27 (0) 68 143 6785</h1>
+            </div>
           </div>
 
           <div className="column-right">

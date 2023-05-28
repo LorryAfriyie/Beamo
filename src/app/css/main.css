@@ -1,12 +1,93 @@
 #about {
   min-height: 100dvh;
-  background: #34bfb1;
 }
-#about .grid {
+#about .about-info-section {
+  background: #34bfb1;
+  padding: 3rem;
+}
+#about .about-info-section .grid-even-columns {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+  padding: 1rem;
+}
+#about .about-info-section .grid-even-columns .flow {
+  position: relative;
+}
+#about .about-info-section .grid-even-columns .flow .block {
+  position: absolute;
+  top: 0;
+}
+#about .about-info-section .grid-even-columns .flow .block-1 {
+  background: #17736a;
+  color: #dedede;
+  border-radius: 5px;
+  left: 0;
+  z-index: 1;
+}
+#about .about-info-section .grid-even-columns .flow .block-1 h1 {
+  position: relative;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #f24957;
+}
+#about .about-info-section .grid-even-columns .flow .block-1 h1::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  background-color: #f24957;
+}
+#about .about-info-section .grid-even-columns .flow .block-2 {
+  background: rgba(4, 36, 33, 0.9843137255);
+  border-radius: 5px;
+  z-index: 0;
+  left: 150px;
+}
+#about .about-info-section .grid-even-columns .flow .block-2 h1 {
+  position: relative;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #f24957;
+}
+#about .about-info-section .grid-even-columns .flow .block-2 h1::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  background-color: #f24957;
+}
+#about .about-team-section {
+  background: #dedede;
+  padding: 3rem;
+}
+#about .about-team-section .team-grid-even-columns {
   display: grid;
   gap: 1rem;
-  grid-template-columns: 1fr;
-  place-items: center;
+}
+#about .about-team-section .team-grid-even-columns .flow .team-card {
+  background: rgba(4, 36, 33, 0.9843137255);
+  border-radius: 5px;
+  border: #17736a solid 3px;
+  padding: 3rem;
+}
+@media (min-width: 50em) {
+  #about .grid-even-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 50em) {
+  #about .team-grid-even-columns {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 #blog {
@@ -47,6 +128,33 @@
   width: 50px;
   background-color: #dedede;
 }
+#contact .contact-container {
+  padding: 3rem;
+}
+#contact .contact-container .contact-grid {
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#contact .contact-container .contact-grid input,
+#contact .contact-container .contact-grid textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  padding: 12px;
+  resize: vertical;
+}
+#contact .contact-container .contact-grid .contact-details {
+  margin-bottom: 4rem;
+}
+@media (min-width: 50em) {
+  #contact .contact-container .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .footer {
   padding: 2em;
   margin-top: auto;

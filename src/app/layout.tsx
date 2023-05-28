@@ -12,6 +12,7 @@ const press = Press_Start_2P({ weight: "400", subsets: ["latin"] });
 export const metadata = {
   title: "Beamo",
   description: "Beamo Game Studio",
+  content: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({
