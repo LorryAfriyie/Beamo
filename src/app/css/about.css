@@ -13,27 +13,25 @@
   gap: 3rem;
   padding: 1rem;
 }
-#about .about-info-section .grid-even-columns .flow {
-  position: relative;
+#about .about-info-section .grid-even-columns .flow .block-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "overlap";
 }
-#about .about-info-section .grid-even-columns .flow .block {
-  position: absolute;
-  top: 0;
-}
-#about .about-info-section .grid-even-columns .flow .block-1 {
+#about .about-info-section .grid-even-columns .flow .block-grid .block-1 {
   background: #17736a;
   color: #dedede;
   border-radius: 5px;
-  left: 0;
-  z-index: 1;
+  grid-area: overlap;
 }
-#about .about-info-section .grid-even-columns .flow .block-1 h1 {
+#about .about-info-section .grid-even-columns .flow .block-grid .block-1 h1 {
   position: relative;
   font-size: 2rem;
   margin-bottom: 2rem;
   color: #f24957;
 }
-#about .about-info-section .grid-even-columns .flow .block-1 h1::after {
+#about .about-info-section .grid-even-columns .flow .block-grid .block-1 h1::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -43,19 +41,21 @@
   width: 50px;
   background-color: #f24957;
 }
-#about .about-info-section .grid-even-columns .flow .block-2 {
+#about .about-info-section .grid-even-columns .flow .block-grid .block-2 {
   background: rgba(4, 36, 33, 0.9843137255);
   border-radius: 5px;
-  z-index: 0;
-  left: 150px;
+  grid-area: overlap;
+  align-self: center;
+  justify-self: center;
+  left: 50%;
 }
-#about .about-info-section .grid-even-columns .flow .block-2 h1 {
+#about .about-info-section .grid-even-columns .flow .block-grid .block-2 h1 {
   position: relative;
   font-size: 2rem;
   margin-bottom: 2rem;
   color: #f24957;
 }
-#about .about-info-section .grid-even-columns .flow .block-2 h1::after {
+#about .about-info-section .grid-even-columns .flow .block-grid .block-2 h1::after {
   content: "";
   position: absolute;
   left: 50%;

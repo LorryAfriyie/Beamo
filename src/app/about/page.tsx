@@ -2,7 +2,7 @@ import Image from "next/image";
 import beamoLogo from "../img/BeamoLogoDark.png";
 
 // Contact
-export default function Contact() {
+export default function About() {
   return (
     <section id="about">
       <div className="about-info-section">
@@ -12,24 +12,28 @@ export default function Contact() {
           </div>
 
           <div className="flow">
-            <div className="block block-1">
-              <h1>Beamo's Story</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Incidunt totam soluta laboriosam voluptates possimus
-                consequuntur, mollitia esse porro illum blanditiis atque maiores
-                architecto reprehenderit non hic ratione nihil dicta placeat!
-              </p>
-            </div>
+            <div className="block-grid">
+              <div className="block-1">
+                <h1>Beamo's Story</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt totam soluta laboriosam voluptates possimus
+                  consequuntur, mollitia esse porro illum blanditiis atque
+                  maiores architecto reprehenderit non hic ratione nihil dicta
+                  placeat!
+                </p>
+              </div>
 
-            <div className="block block-2">
-              <h1>Beamo's Story</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Incidunt totam soluta laboriosam voluptates possimus
-                consequuntur, mollitia esse porro illum blanditiis atque maiores
-                architecto reprehenderit non hic ratione nihil dicta placeat!
-              </p>
+              <div className="block-2">
+                <h1>Beamo's Story</h1>
+                {/* <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt totam soluta laboriosam voluptates possimus
+                  consequuntur, mollitia esse porro illum blanditiis atque
+                  maiores architecto reprehenderit non hic ratione nihil dicta
+                  placeat!
+                </p> */}
+              </div>
             </div>
           </div>
         </div>

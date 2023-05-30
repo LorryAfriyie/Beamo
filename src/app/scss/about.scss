@@ -23,61 +23,62 @@ $beamo-grey: #555;
       padding: 1rem;
 
       .flow {
-        position: relative;
+        .block-grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr;
+          grid-template-areas: "overlap";
 
-        .block {
-          position: absolute;
-          top: 0;
-        }
+          .block-1 {
+            background: #17736a;
+            color: $beamo-white;
+            border-radius: 5px;
+            grid-area: overlap;
 
-        .block-1 {
-          background: #17736a;
-          color: $beamo-white;
-          border-radius: 5px;
-          left: 0;
-          z-index: 1;
+            h1 {
+              position: relative;
+              font-size: 2rem;
+              margin-bottom: 2rem;
+              color: $secondary;
+            }
 
-          h1 {
-            position: relative;
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            color: $secondary;
+            h1::after {
+              content: "";
+              position: absolute;
+              left: 50%;
+              bottom: 0;
+              transform: translateX(-50%);
+              height: 4px;
+              width: 50px;
+              background-color: $secondary;
+            }
           }
 
-          h1::after {
-            content: "";
-            position: absolute;
+          .block-2 {
+            background: #042421fb;
+            border-radius: 5px;
+            grid-area: overlap;
+            align-self: center;
+            justify-self: center;
             left: 50%;
-            bottom: 0;
-            transform: translateX(-50%);
-            height: 4px;
-            width: 50px;
-            background-color: $secondary;
-          }
-        }
 
-        .block-2 {
-          background: #042421fb;
-          border-radius: 5px;
-          z-index: 0;
-          left: 150px;
+            h1 {
+              position: relative;
+              font-size: 2rem;
+              margin-bottom: 2rem;
+              color: $secondary;
+            }
 
-          h1 {
-            position: relative;
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            color: $secondary;
-          }
-
-          h1::after {
-            content: "";
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-            transform: translateX(-50%);
-            height: 4px;
-            width: 50px;
-            background-color: $secondary;
+            h1::after {
+              content: "";
+              position: absolute;
+              left: 50%;
+              bottom: 0;
+              transform: translateX(-50%);
+              height: 4px;
+              width: 50px;
+              background-color: $secondary;
+            }
           }
         }
       }
