@@ -69,15 +69,37 @@
   background: #dedede;
   padding: 3rem;
 }
+#about .about-team-section h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #f24957;
+}
 #about .about-team-section .team-grid-even-columns {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
 }
 #about .about-team-section .team-grid-even-columns .flow .team-card {
   background: rgba(4, 36, 33, 0.9843137255);
   border-radius: 5px;
   border: #17736a solid 3px;
   padding: 3rem;
+}
+#about .about-team-section .team-grid-even-columns .flow .team-card h1 {
+  color: #dedede;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+#about .about-team-section .team-grid-even-columns .flow .team-card h2 {
+  margin-bottom: 1rem;
+  color: #555;
+  text-align: center;
+}
+#about .about-team-section .team-grid-even-columns .flow .team-card p {
+  color: #34bfb1;
+}
+#about .about-team-section .team-grid-even-columns .flow .team-card .img-container {
+  margin-bottom: 2rem;
 }
 @media (min-width: 50em) {
   #about .grid-even-columns {
@@ -86,6 +108,6 @@
 }
 @media (min-width: 50em) {
   #about .team-grid-even-columns {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }

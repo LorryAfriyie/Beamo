@@ -89,9 +89,15 @@ $beamo-grey: #555;
     background: $beamo-white;
     padding: 3rem;
 
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: $secondary;
+    }
+
     .team-grid-even-columns {
       display: grid;
-      gap: 1rem;
+      gap: 2rem;
 
       .flow {
         .team-card {
@@ -99,6 +105,27 @@ $beamo-grey: #555;
           border-radius: 5px;
           border: $quaternary solid 3px;
           padding: 3rem;
+
+          h1 {
+            color: $beamo-white;
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+          }
+
+          h2 {
+            margin-bottom: 1rem;
+            color: $beamo-grey;
+            text-align: center;
+          }
+
+          p {
+            color: $primary;
+          }
+
+          .img-container {
+            margin-bottom: 2rem;
+          }
         }
       }
     }
@@ -112,7 +139,7 @@ $beamo-grey: #555;
 
   @media (min-width: 50em) {
     .team-grid-even-columns {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }
