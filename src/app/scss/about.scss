@@ -23,6 +23,13 @@ $beamo-grey: #555;
       padding: 1rem;
 
       .flow {
+        .img-container {
+          width: 350px;
+          height: 450px;
+          margin: 0 auto;
+          display: grid;
+          place-items: center;
+        }
         .block-grid {
           display: grid;
           grid-template-columns: 1fr;

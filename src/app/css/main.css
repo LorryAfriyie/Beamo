@@ -13,6 +13,13 @@
   gap: 3rem;
   padding: 1rem;
 }
+#about .about-info-section .grid-even-columns .flow .img-container {
+  width: 350px;
+  height: 450px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
 #about .about-info-section .grid-even-columns .flow .block-grid {
   display: grid;
   grid-template-columns: 1fr;

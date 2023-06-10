@@ -22,7 +22,9 @@ export default function About() {
       <div className="about-info-section">
         <div className="grid-even-columns">
           <div className="flow">
-            <Image src={beamoLogo} alt={""} className="img-fluid" />
+            <div className="img-container">
+              <Image src={beamoLogo} alt={""} className="img-fluid" />
+            </div>
           </div>
 
           <div className="flow">
