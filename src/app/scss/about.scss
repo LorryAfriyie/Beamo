@@ -24,11 +24,13 @@ $beamo-grey: #555;
 
       .flow {
         .img-container {
-          width: 350px;
-          height: 450px;
           margin: 0 auto;
           display: grid;
           place-items: center;
+
+          img {
+            width: 50%;
+          }
         }
         .block-grid {
           display: grid;
@@ -141,6 +143,13 @@ $beamo-grey: #555;
   @media (min-width: 50em) {
     .grid-even-columns {
       grid-template-columns: repeat(2, 1fr);
+      .flow {
+        .img-container {
+          img {
+            width: 80%;
+          }
+        }
+      }
     }
   }
 
